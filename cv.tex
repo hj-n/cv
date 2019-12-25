@@ -29,6 +29,8 @@
 \newcommand{\prd}{Physical Review D}
 
 
+
+
 % character encoding
 \usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
 %\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
@@ -39,8 +41,12 @@
 %\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
 \usepackage{hyperref} \hypersetup{ colorlinks=true,  }
+\newcommand{\changeurlcolor}[1]{\hypersetup{urlcolor=#1}}
+
+\usepackage[dvipsnames]{xcolor}
 
 
+\definecolor{refColor}{RGB}{100, 0, 66}
 
 \usepackage{import}
 \def\labelitemi{ }
@@ -83,6 +89,9 @@
 %\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
 %-----       resume       ---------------------------------------------------------
 
+
+
+\changeurlcolor{blue}
 \makecvtitle
 
 \small{}
@@ -108,7 +117,7 @@
 \begin{itemize}
     \item Minor in \textit{Mathematics}
     \item Planning to graduate in \textit{June, 2020}. (Early Graduation)
-    \item Major GPA: 4.06 / 4.3
+    \item Major GPA: 4.04 / 4.3
 \end{itemize}
 }}
 \vspace{4mm}
@@ -201,13 +210,6 @@
                   {I developed a convenient, simple, easy-to-use vim plugin that can be used in IntelliJ IDEA. The goal of the product is to eliminate unnecessary complexity of the original vim editor/plugin, and to improve the productivity of code generation. Now preparing to release. Refer \href{https://github.com/jeonhyun97/ViVim}{Github Repository} for the detail.}}
     \vspace{4mm}
     
-    \item{\cventry{Jul.2019 -- Dec.2019}
-                  {Graduation study}
-                  {Implementation of minimizing point-interval coverage algorithm}
-                  {}
-                  {}
-                  {As a part of my graduate study, I implemented the algorithm that minimizes the total area of point-interval coverage, which is provided by the \textit{Faster Algorithms for some Optimization Problems on Collinear Points }(SoCG, 2018). Refer \href{https://github.com/jeonhyun97/Minimizing_point_interval_coverage_algorithm}{Github Repository} for the detail.}}
-    \vspace{4mm}
 \end{itemize}
 
 
@@ -292,10 +294,19 @@
 \section{References}
 \vspace{2mm}
 
+
+
 \begin{itemize}
-    \item{\cventry{Undergraduate Advisor}{Dept. of Computer Science \& Enginnering, POSTECH}{Prof. Youngju Seo}{}{}{}}
+    \item{\cventry{Undergraduate Advisor}{Dept. of Computer Science \& Engineering, POSTECH}{\changeurlcolor{refColor}\href{mailto:yjsuh@postech.ac.kr}{Prof. Youngju Seo}\changeurlcolor{blue}}{}{}{}}
 \vspace{4mm} 
 \end{itemize}
+
+\begin{center}
+    \textit{Compiled in \today}
+\end{center}
+
+
+
 
 
 
