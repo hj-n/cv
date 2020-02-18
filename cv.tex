@@ -1,45 +1,18 @@
-%% start of file `template.tex'.
-%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
-%
-% This work may be distributed and/or modified under the
-% conditions of the LaTeX Project Public License version 1.3c,
-% available at http://www.latex-project.org/lppl/.
+
+\documentclass[11pt,a4paper,sans]{moderncv}       
+\moderncvstyle{banking}                            
+\moderncvcolor{purple}         
+
+% Commands
+
+\newcommand{\postech}{POSTECH (Pohang University of Science and Technology)}
+\newcommand{\snu}{Seoul National University}
+\newcommand{\pohang}{Pohang, Republic of Korea}
+\newcommand{\seoul}{Seoul, Republic of Korea}
 
 
-\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
-
-% modern themes
-\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
-\moderncvcolor{purple}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
-%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
-%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
-
-\newcommand{\apj}{The Astrophysical Journal}
-\newcommand{\APJ}{The Astrophysical Journal}
-\newcommand{\nar}{New Astronomical Review}
-\newcommand{\pasj}{Publications of the Astronomical Society of Japan}
-\newcommand{\apjl}{The Astrophysical Journal Letters}
-\newcommand{\mnras}{Monthly Notices of the Royal Astronomical Society}
-\newcommand{\apjs}{The Astrophysical Journal Supplement}
-\newcommand{\nat}{Nature}
-\newcommand{\araa}{Annual Review of Astronomy and Astrophysics}
-\newcommand{\aap}{Astronomy and Astrophysics}
-\newcommand{\prc}{Physical Review C}
-\newcommand{\ssr}{Space Science Review}
-\newcommand{\prd}{Physical Review D}
-
-
-
-
-% character encoding
-\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
-%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
-
-% adjust the page margins
+\usepackage[utf8]{inputenc}                      
 \usepackage[scale=0.80]{geometry}
-%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
-%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
-
 \usepackage{hyperref} \hypersetup{ colorlinks=true,  }
 \newcommand{\changeurlcolor}[1]{\hypersetup{urlcolor=#1}}
 
@@ -86,9 +59,6 @@
 
 
 \begin{document}
-%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
-%-----       resume       ---------------------------------------------------------
-
 
 
 \changeurlcolor{blue}
@@ -100,32 +70,33 @@
 
 \vspace{5pt}
 
-
 \subsection{Academic Qualifications}
 
 \vspace{5pt}
 
 \begin{itemize}
 
-
-%\item{\cventry{2018}{Medical Faculty Mannheim}{Master of Science, Biomedical Engineering}{Heidelberg, Germany}{\textit{Heidelberg University,}}{ }{\textbf{Thesis field}:  Fast Monte Carlo simulation in ion therapy,}}
-%\vspace{4mm}
-%양식
-
-\item{\cventry{Mar.2016 -- Current}{POSTECH (Pohang University of Science and Technology)}{Undergraduated Student, Computer Science \& Engineering}{Pohang, Republic of Korea}{}{
-\begin{itemize}
-    \item Minor in \textit{Mathematics}
-    \item Planning to graduate in \textit{June, 2020}. (Early Graduation)
-\end{itemize}
-}}
+\item{\cventry{Mar.2016 -- Current}
+              {\postech}
+              {Undergraduated Student, Computer Science \& Engineering}
+              {\pohang}
+              {}
+              {
+                \begin{itemize}
+                    \item Minor in \textit{Mathematics}
+                    \item Planning to graduate in \textit{June, 2020}. (Early Graduation)
+                \end{itemize}
+              }}
 \vspace{4mm}
 
-
-\item{\cventry{Mar.2013 -- Jan.2016}{Hana Academy Seoul}{High school Graduation}{Seoul, Republic of Korea}{}{ }{}}
+\item{\cventry{Mar.2013 -- Jan.2016}
+              {Hana Academy Seoul}
+              {High school Graduation}
+              {\seoul}
+              {}
+              {}
+              {}}
 \vspace{4mm}
-
-
-
 
 \end{itemize}
 
@@ -139,45 +110,6 @@
 
 \vspace{4mm}
 
-
-
-%--------------------------------------------------------------
-
-
-%----------------------------------------------------------------------------------------
-%\section{Publications}
-
-%\vspace{6pt}
- 
-%\begin{itemize}
-
-%\item{ \textbf{Multimessenger observations of a flaring blazar coincident with high-energy neutrino IceCube-170922A}\\
-%Science,2018
-%}
-%\vspace{6pt}
-%\item{\textbf{Very high energy particle acceleration in micro quasar jets: proof from SS 433}, HAWC GROUP\\
-%Nature, 2018
-%}
-%\vspace{6pt}
-
-%\end{itemize}
-
-
-
-%----------------
-
-%\section{Conferences and Presentations}
-%\vspace{6pt}
-
-%\begin{itemize}
-
-%\item{\cventry{October 2018}{Presented a talk about measuring galactic gamma ray diffuse emission}{HAWC Conference }{Heidelberg, Germany}{}{\vspace{3pt} \textbf{Topic:}  Gamma ray diffuse emission from inner Galaxy analysis with HAWC Data  \\ 
-%}}
-
-%\vspace{6pt}
-%\end{itemize}
-
-%------------------------------------------------------------------------------------------
 \section{Experience}
 \vspace{6pt}
 
@@ -186,14 +118,30 @@
 
 \begin{itemize}
 
-\item{\cventry{Jan.2019 -- Feb.2019}{POSTECH (Pohang University of Science and Technology)}{Computer Vision Laboratory}{Pohang, Republic of Korea}{}{Research Student \textit{(Advisor: Prof. Minsoo Cho)}}}
+\item{\cventry{Jan.2020 -- Current}
+              {\snu}
+              {Human-Computer Interaction Lab.}
+              {\seoul}
+              {}
+              {Undergraduate Intern \textit{(Advisor: Prof. Jinwook Seo)}}}
 \vspace{4mm}
 
-\item{\cventry{Jun.2019 -- Aug.2019}{POSTECH (Pohang University of Science and Technology)}{Geometric Algorithms Laboratory}{Pohang, Republic of Korea}{}{Research Student \textit{(Advisor: Prof. Heekap Ahn)}}}
+\item{\cventry{Jun.2019 -- Aug.2019}
+              {\postech}
+              {Geometric Algorithms Lab.}
+              {\pohang}
+              {}
+              {Research Student \textit{(Advisor: Prof. Heekap Ahn)}}}
 \vspace{4mm}
 
-\item{\cventry{Jan.2020 -- Current}{Seoul National University}{Human-Computer Interaction Laboratory}{Seoul, Republic of Korea}{}{Undergraduate Intern \textit{(Advisor: Prof. Jinwook Seo)}}}
+\item{\cventry{Jan.2019 -- Feb.2019}
+              {\postech}
+              {Computer Vision Lab.}
+              {\pohang}
+              {}
+              {Research Student \textit{(Advisor: Prof. Minsoo Cho)}}}
 \vspace{4mm}
+
 
 \end{itemize}
 
@@ -207,10 +155,14 @@
                   {}
                   {}
                   {We can use useful mathematical functions in C/C++ by including \texttt{math.h} or \texttt{cmath} library. However, it is hard to recognize the full functionality of the function at a glance if the function call is deep and complex. Therefore, I developed VScode extension which parses the math function and its arguments recursively and hovers the generated Unicode-style math formula. Refer \href{https://github.com/jeonhyun97/c_math_viewer}{Github Repository} for the detail, and check the product in the \href{https://marketplace.visualstudio.com/items?itemName=Hyeon.c-math-viewer&ssr=false#overview}{marketplace}.}}
-                  
     \vspace{4mm}
     \vspace{4mm}
-    \item{\cventry{Jun.2019 -- Jul.2019}{POSTECH-YONSEI SNS Program}{BCRiders -- Blockchain-based Delivery Platform}{}{}{I developed web service, which efficiently, safely provides online food delivery and review system with the undergraduate students from \textit{Yonsei University}. We used the blockchain and smart contract functionality supported by Ethereum. Refer \href{https://github.com/jeonhyun97/BR_2019}{Github Repository} for the detail. \textit{(Advisor: Prof. James Wonki Hong) }}}
+    \item{\cventry{Jun.2019 -- Jul.2019}
+                  {POSTECH-YONSEI SNS Program}
+                  {BCRiders -- Blockchain-based Delivery Platform}
+                  {}
+                  {}
+                  {I developed web service, which efficiently, safely provides online food delivery and review system with the undergraduate students from \textit{Yonsei University}. We used the blockchain and smart contract functionality supported by Ethereum. Refer \href{https://github.com/jeonhyun97/BR_2019}{Github Repository} for the detail. \textit{(Advisor: Prof. James Wonki Hong) }}}
     \vspace{4mm}
     \item{\cventry{Sep.2019 -- Current}
                   {Started from POSTECH Software Design Methods (CSED332) term project}
@@ -223,17 +175,24 @@
 \end{itemize}
 
 
-
-
-
 \subsection{Teaching Experiences}
 \vspace{5pt}
 \begin{itemize}
 
-\item{\cventry{Feb.2017 -- May.2017}{POSTECH (Pohang University of Science and Technology)}{Mentor of SMP \scriptsize{(Student Mentoring Program)}}{Pohang, Republic of Korea}{}{Taught \textit{Calculus} (MATH110) to freshmen}}
+\item{\cventry{Feb.2017 -- May.2017}
+              {\postech}
+              {Mentor of SMP \scriptsize{(Student Mentoring Program)}}
+              {\pohang}
+              {}
+              {Taught \textit{Calculus} (MATH110) to freshmen}}
 \vspace{4mm}
 
-\item{\cventry{Sep.2019 -- Dec.2019}{POSTECH (Pohang University of Science and Technology)}{Tutor of CSE Turing Program}{Pohang, Republic of Korea}{}{Taught \textit{Automata \& Formal Languages} (CSED341) to the students majoring in CSE}}
+\item{\cventry{Sep.2019 -- Dec.2019}
+              {\postech}
+              {Tutor of CSE Turing Program}
+              {\pohang}
+              {}
+              {Taught \textit{Automata \& Formal Languages} (CSED341) to the students majoring in CSE}}
 \vspace{4mm}
 
 \end{itemize}
@@ -241,14 +200,14 @@
 \subsection{Academic Experiences}
 \vspace{5pt}
 \begin{itemize}
-    \item{\cventry{Jun.2018 -- Jul.2018}{Sookmyung Women's University}{Exchange Student}{Seoul, Republic of Korea}{}{}}
+    \item{\cventry{Jun.2018 -- Jul.2018}
+                  {Sookmyung Women's University}
+                  {Exchange Student}
+                  {\seoul}
+                  {}
+                  {}}
 \vspace{4mm}
 \end{itemize}
-
-%-------------------------------------------------------------
-
-
-
 
 %-------------------------------------------------------------
 \section{Personal Data}
@@ -267,13 +226,13 @@
 \vspace{5pt}
 \item \textbf{Available Tool \& Environments: }
 \begin{itemize}
-    \item html / css
+    \item html / css / jquery
     \item Ethereum, web3js
-    \item GUI Libraries (applet, swing, Qt...)
+    \item GUI Libraries (applet, swing, Qt)
     \item pytorch
+    \item D3
     \item Editor plugin Development (IntelliJ IDEA, VS Code)
 \end{itemize}
-
 
 \vspace{5pt}
 
@@ -308,19 +267,16 @@
 
 
 \begin{itemize}
-    \item{\cventry{Undergraduate Advisor}{Dept. of Computer Science \& Engineering, POSTECH}{\changeurlcolor{refColor}\href{mailto:yjsuh@postech.ac.kr}{Prof. Youngju Seo}\changeurlcolor{blue}}{}{}{}}
+    \item{\cventry{Undergraduate Advisor}
+                  {Dept. of Computer Science \& Engineering, POSTECH}
+                  {\changeurlcolor{refColor}\href{mailto:yjsuh@postech.ac.kr}
+                  {Prof. Youngju Seo}\changeurlcolor{blue}}{}{}{}}
 \vspace{4mm} 
 \end{itemize}
 
 \begin{center}
     \textit{Compiled in \today}
 \end{center}
-
-
-
-
-
-
 
 \end{document}
 
