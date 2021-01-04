@@ -1,7 +1,7 @@
 
 \documentclass[11pt,a4paper,sans]{moderncv}       
 \moderncvstyle{banking}                            
-\moderncvcolor{red}         
+\moderncvcolor{blue}         
 
 % Commands
 
@@ -14,13 +14,15 @@
 
 \setlist{itemsep=-2pt}
 
+\usepackage{fontawesome}
+
 \usepackage[utf8]{inputenc}                      
 \usepackage[scale=0.80]{geometry}
 \usepackage{hyperref} \hypersetup{ colorlinks=true, }
 \newcommand{\changeurlcolor}[1]{\hypersetup{urlcolor=#1}}
 
 \usepackage[dvipsnames]{xcolor}
-\definecolor{refColor}{RGB}{100, 0, 66}
+\definecolor{refColor}{RGB}{0, 0, 0}
 
 \usepackage{import}
 \def\labelitemi{ }
@@ -224,8 +226,7 @@
 \begin{itemize}
     \item{\cventry{Undergraduate advisor}
                   {Dept. of Computer Science \& Engineering, POSTECH}
-                  {\changeurlcolor{refColor}\href{mailto:yjsuh@postech.ac.kr}
-                  {Prof. Youngjoo Seo}\changeurlcolor{blue}}{}{}{}}
+                  {\changeurlcolor{refColor}Prof. Youngjoo Seo \hspace{0.2mm} \href{mailto:yjsuh@postech.ac.kr}{\faEnvelope}}{}{}{}}
 \vspace{4mm} 
 \end{itemize}
 
